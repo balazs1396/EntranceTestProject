@@ -35,4 +35,9 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'port_channel' => [
+        'location' => 'https://port.hu/',
+        
+    ]
+
 ];
