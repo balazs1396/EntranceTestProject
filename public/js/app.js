@@ -963,7 +963,11 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(10);
+<<<<<<< Updated upstream
 module.exports = __webpack_require__(48);
+=======
+module.exports = __webpack_require__(43);
+>>>>>>> Stashed changes
 
 
 /***/ }),
@@ -987,6 +991,7 @@ window.Vue = __webpack_require__(35);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+<<<<<<< Updated upstream
 Vue.component('movie-container', __webpack_require__(39));
 
 var app = new Vue({
@@ -995,6 +1000,12 @@ var app = new Vue({
     message: 'Hello Vue!'
   },
   mounted: function mounted() {}
+=======
+Vue.component('example-component', __webpack_require__(39));
+
+var app = new Vue({
+  el: '#app'
+>>>>>>> Stashed changes
 });
 
 /***/ }),
@@ -44855,6 +44866,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
+<<<<<<< Updated upstream
 function injectStyle (ssrContext) {
   if (disposed) return
   __webpack_require__(40)
@@ -44870,6 +44882,19 @@ var __vue_template_functional__ = false
 var __vue_styles__ = injectStyle
 /* scopeId */
 var __vue_scopeId__ = "data-v-5819eeb0"
+=======
+var normalizeComponent = __webpack_require__(40)
+/* script */
+var __vue_script__ = __webpack_require__(41)
+/* template */
+var __vue_template__ = __webpack_require__(42)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+>>>>>>> Stashed changes
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -44880,7 +44905,11 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
+<<<<<<< Updated upstream
 Component.options.__file = "resources/assets/js/components/MovieContainer.vue"
+=======
+Component.options.__file = "resources/assets/js/components/ExampleComponent.vue"
+>>>>>>> Stashed changes
 
 /* hot reload */
 if (false) {(function () {
@@ -44889,9 +44918,15 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
+<<<<<<< Updated upstream
     hotAPI.createRecord("data-v-5819eeb0", Component.options)
   } else {
     hotAPI.reload("data-v-5819eeb0", Component.options)
+=======
+    hotAPI.createRecord("data-v-7168fb6a", Component.options)
+  } else {
+    hotAPI.reload("data-v-7168fb6a", Component.options)
+>>>>>>> Stashed changes
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -44903,6 +44938,7 @@ module.exports = Component.exports
 
 /***/ }),
 /* 40 */
+<<<<<<< Updated upstream
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -45286,6 +45322,8 @@ module.exports = function listToStyles (parentId, list) {
 
 /***/ }),
 /* 45 */
+=======
+>>>>>>> Stashed changes
 /***/ (function(module, exports) {
 
 /* globals __VUE_SSR_CONTEXT__ */
@@ -45394,7 +45432,11 @@ module.exports = function normalizeComponent (
 
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 46 */
+=======
+/* 41 */
+>>>>>>> Stashed changes
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -45415,6 +45457,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+<<<<<<< Updated upstream
 //
 //
 //
@@ -45473,12 +45516,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 /* 47 */
+=======
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    mounted: function mounted() {
+        console.log('Component mounted.');
+    }
+});
+
+/***/ }),
+/* 42 */
+>>>>>>> Stashed changes
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
+<<<<<<< Updated upstream
   return _c("div", { staticClass: "container" }, [
     _c("input", {
       directives: [
@@ -45549,12 +45604,16 @@ var render = function() {
       )
     ])
   ])
+=======
+  return _vm._m(0)
+>>>>>>> Stashed changes
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
+<<<<<<< Updated upstream
     return _c("thead", [
       _c("tr", [
         _c("th", [_vm._v("Channel Id")]),
@@ -45568,6 +45627,23 @@ var staticRenderFns = [
         _c("th", [_vm._v("Program Short description")]),
         _vm._v(" "),
         _c("th", [_vm._v("Program age limit")])
+=======
+    return _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-8 col-md-offset-2" }, [
+          _c("div", { staticClass: "panel panel-default" }, [
+            _c("div", { staticClass: "panel-heading" }, [
+              _vm._v("Example Component")
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "panel-body" }, [
+              _vm._v(
+                "\n                    I'm an example component!\n                "
+              )
+            ])
+          ])
+        ])
+>>>>>>> Stashed changes
       ])
     ])
   }
@@ -45577,12 +45653,20 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
+<<<<<<< Updated upstream
     require("vue-hot-reload-api")      .rerender("data-v-5819eeb0", module.exports)
+=======
+    require("vue-hot-reload-api")      .rerender("data-v-7168fb6a", module.exports)
+>>>>>>> Stashed changes
   }
 }
 
 /***/ }),
+<<<<<<< Updated upstream
 /* 48 */
+=======
+/* 43 */
+>>>>>>> Stashed changes
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
